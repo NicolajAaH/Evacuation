@@ -1,5 +1,5 @@
 const constansts = {
-    serverBaseURL: 'backend:3000'
+    serverBaseURL: 'backend-evacuation:3000'
 }
 
 export default constansts;
