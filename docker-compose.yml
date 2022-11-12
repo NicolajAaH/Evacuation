@@ -15,5 +15,5 @@ services:
       - NODE_ENV=value
       - MONGO_DB_CONNECTION_STRING=mongodb+srv://cloud:cloud@nicol20-cluster.emeo9pd.mongodb.net/test
       - MONGO_DB_NAME=test
-      - REDIS_URI=http://127.0.0.1:6379
+      - REDIS_URI=rediss://default:AVNS_-brQ-a_DJHG0BACfWtW@redis-1521426b-student-1fff.aivencloud.com:23746
       
