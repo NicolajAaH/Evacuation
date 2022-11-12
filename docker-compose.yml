@@ -1,0 +1,19 @@
+version: "3.9"  # optional since v1.27.0
+services:
+  frontend:
+    build: ./Frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+  backend:
+    build: ./Backend
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - NODE_ENV=value
+      - MONGO_DB_CONNECTION_STRING=mongodb+srv://cloud:cloud@nicol20-cluster.emeo9pd.mongodb.net/test
+      - MONGO_DB_NAME=test
+      - REDIS_URI=http://127.0.0.1:6379
+      
